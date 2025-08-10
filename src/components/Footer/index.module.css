@@ -1,0 +1,8 @@
+.footer {
+    height: 50px;
+    text-align: center;
+}
+
+.footer a { color: #a6a6a6; }
+
+.footer a:hover { color: #616161; }

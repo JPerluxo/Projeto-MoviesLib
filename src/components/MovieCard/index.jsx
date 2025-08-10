@@ -3,13 +3,14 @@ import styles from "./index.module.css";
 
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
+import noImageImg from "/images/No-Image.png";
 
 const imageUrl = import.meta.env.VITE_IMG;
 
 const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div className={styles.movieCard}>
-      <img src={imageUrl + movie.poster_path} alt={movie.title}/>
+      <img src={movie.poster_path ? imageUrl + movie.poster_path : noImageImg} alt={movie.title}/>
       <h2>{movie.title}</h2>
       <p>
         <FaStar/> {movie.vote_average}

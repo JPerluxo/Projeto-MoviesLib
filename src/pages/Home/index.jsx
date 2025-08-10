@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    const topRatedUrl = `${moviesURL}top_rated?${apiKey}&include_adult=true`;
+    const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
     getTopRatedMovies(topRatedUrl);
   }, []);
 

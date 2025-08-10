@@ -17,7 +17,7 @@ const Search = () => {
   };
 
   useEffect(() => {
-    const searchWithQueryUrl = `${searchUrl}?${apiKey}&query=${query}&include_adult=true`;
+    const searchWithQueryUrl = `${searchUrl}?${apiKey}&query=${query}`;
     getTopSearchedMovies(searchWithQueryUrl);
   }, [query]);
 
